@@ -5,5 +5,7 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   const entries = new FormData(event.target);
   const { dividend, divider } = Object.fromEntries(entries);
-  result.innerText = dividend / divider;
+  const division = dividend / divider
+  const twoDecimals = division.toFixed(2);
+  result.innerText = twoDecimals;
 });
