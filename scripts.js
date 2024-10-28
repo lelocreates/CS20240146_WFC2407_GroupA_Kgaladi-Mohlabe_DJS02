@@ -2,6 +2,7 @@
 const form = document.querySelector("[data-form]");
 const result = document.querySelector("[data-result]");
 //add event listener for when the form is submitted
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const entries = new FormData(event.target);
